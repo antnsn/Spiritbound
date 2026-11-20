@@ -1,5 +1,5 @@
 <!-- summary (CurseForge "Summary" field, at most 256 characters):
-Priest helper for WoW: Forever: a card when Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out, and a warning before candles or feathers run out. Explained in plain words.
+Priest helper for WoW: Forever: a card when Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out, and a warning before candles or feathers run out.
 -->
 
 # Spiritbound
