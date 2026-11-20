@@ -7,6 +7,14 @@ import math
 import random
 from PIL import Image, ImageDraw, ImageFilter
 
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "LibBound", "tools"))
+from paint import Canvas, bar, disc, grow, leaf, lick, mask, minus, poly, radial_disc, rays, ring, sparkle, union  # noqa: E402
+
+S = 1024
+
 OUT = "Media/"
 
 
@@ -60,24 +68,37 @@ def rim(size=64, width=5):
 
 
 def emblem(size=256):
-    """The Spiritbound emblem: a halo ring with a candle flame, silver and pale violet."""
-    s = size * 4
-    c = s / 2
-    img = Image.new("RGBA", (s, s), (0, 0, 0, 0))
-    d = ImageDraw.Draw(img)
-    d.ellipse([s * 0.10, s * 0.10, s * 0.90, s * 0.90], outline=(225, 220, 250, 230), width=int(s * 0.035))
-    d.ellipse([s * 0.30, s * 0.14, s * 0.70, s * 0.26], outline=(245, 240, 255, 235), width=int(s * 0.02))  # halo
-    # the candle
-    d.rectangle([c - s * 0.07, s * 0.52, c + s * 0.07, s * 0.80], fill=(235, 230, 250, 255))
-    d.line([(c, s * 0.52), (c, s * 0.47)], fill=(120, 110, 140, 255), width=int(s * 0.012))
-    # the flame
-    flame = [(c, s * 0.28), (c + s * 0.07, s * 0.40), (c + s * 0.045, s * 0.47), (c, s * 0.49),
-             (c - s * 0.045, s * 0.47), (c - s * 0.07, s * 0.40)]
-    d.polygon(flame, fill=(250, 236, 190, 255))
-    inner = [(c, s * 0.35), (c + s * 0.03, s * 0.42), (c, s * 0.46), (c - s * 0.03, s * 0.42)]
-    d.polygon(inner, fill=(255, 255, 240, 255))
-    glow = img.filter(ImageFilter.GaussianBlur(s * 0.025))
-    return Image.alpha_composite(glow, img).resize((size, size), Image.LANCZOS)
+    """The Spiritbound emblem, painted (tools in LibBound/tools/paint.py)."""
+    s = S
+    cv = Canvas(s)
+    radial_disc(cv, 0.40, (78, 60, 120), (14, 10, 28))
+    cv.light(rays(s, 32, 0.06, 0.40, 0.045, cy=0.46 * s).filter(ImageFilter.GaussianBlur(6)), (255, 220, 160), 0.45)
+    rg = ring(s, 0.415, 0.372)
+    cv.glow(rg, (220, 200, 255), 18, 0.5)
+    cv.paint(rg, top=(245, 240, 255), bottom=(120, 105, 160), bevel=8, gloss=0.6)
+    # wings: an arm curving up and out from each shoulder, long flight feathers hanging from it,
+    # a row of short coverts over their roots; out past the ring
+    for side in (-1, 1):
+        for row, (n, lmin, lmax, wd, top, bot) in enumerate(((9, 0.12, 0.30, 0.034, (250, 248, 255), (150, 130, 205)),
+                                                             (7, 0.07, 0.13, 0.034, (255, 255, 255), (200, 185, 240)))):
+            for k in range(n)[::-1]:
+                t = (k + (0.5 if row else 0)) / n
+                ax = 0.5 + side * (0.07 + 0.38 * t)
+                ay = 0.50 - 0.20 * math.sin(t * math.pi * 0.62) - 0.02 * t
+                ang = math.radians(100 - 85 * t)       # down near the shoulder, out at the tip
+                a = math.pi - ang if side < 0 else ang
+                ln = lmin + (lmax - lmin) * t ** 0.8
+                f = leaf(s, ax, ay, a, ln, wd * (0.8 + 0.4 * t), bend=-0.012 * side)
+                cv.shadow(f, 6, 2, 5, 0.35)
+                cv.paint(f, top=top, bottom=bot, bevel=5, gloss=0.35, light=0.6, dark=0.5)
+    orb = disc(s, 0.06, 0.5 * s, 0.52 * s)
+    cv.glow(orb, (255, 230, 170), 50, 1.0)
+    cv.light(orb.filter(ImageFilter.GaussianBlur(14)), (255, 245, 210), 1.0)
+    halo = mask(s); d = ImageDraw.Draw(halo)
+    d.ellipse([0.33 * s, 0.17 * s, 0.67 * s, 0.31 * s], outline=255, width=int(0.028 * s))
+    cv.glow(halo, (255, 220, 140), 30, 0.9)
+    cv.paint(halo, top=(255, 250, 220), bottom=(210, 150, 50), bevel=6, gloss=0.8)
+    return cv.image(size)
 
 
 def icon(size):
@@ -90,6 +111,36 @@ def icon(size):
     return Image.alpha_composite(bg, e)
 
 
+def _finish(img, size):
+    """White line art at 4x: a soft glow under it, down to size, as alpha."""
+    glow = img.filter(ImageFilter.GaussianBlur(img.size[0] * 0.012))
+    img = Image.composite(img, glow, img).resize((size, size), Image.LANCZOS)
+    out = Image.new("RGBA", (size, size), (255, 255, 255, 0))
+    out.putalpha(img)
+    return out
+
+def crest(size=256):
+    """The card crest: a halo with wings of light."""
+    s = size * 4
+    c = s / 2
+    img = Image.new("L", (s, s), 0)
+    d = ImageDraw.Draw(img)
+    w = int(s * 0.02)
+    d.ellipse([c - s * 0.16, s * 0.18, c + s * 0.16, s * 0.34], outline=255, width=int(w * 1.4))
+    for side in (-1, 1):
+        for k in range(5):
+            r = s * (0.18 + k * 0.06)
+            x0 = c + side * s * 0.06
+            box = [x0 - r, s * 0.40 - r * 0.6, x0 + r, s * 0.40 + r * 0.9]
+            a0, a1 = (180, 250) if side < 0 else (290, 360)
+            d.arc(box, a0, a1, fill=255 - k * 25, width=w)
+    for k in range(7):
+        a = math.radians(-60 + k * 20)
+        d.line([(c + math.sin(a) * s * 0.10, s * 0.50 + math.cos(a) * s * 0.10),
+                (c + math.sin(a) * s * 0.36, s * 0.50 + math.cos(a) * s * 0.36)], fill=150, width=int(w * 0.6))
+    return _finish(img, size)
+
+
 def save(img, name):
     img.save(OUT + name + ".tga")
     print("wrote", OUT + name + ".tga", img.size)
@@ -98,6 +149,7 @@ def save(img, name):
 if __name__ == "__main__":
     save(mist(), "Mist")
     save(feather(), "Feather")
+    save(crest(), "Crest")
     save(rim(), "Rim")
     save(emblem(256), "Logo256")
     save(emblem(64), "Logo64")
