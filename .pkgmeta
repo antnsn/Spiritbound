@@ -24,5 +24,7 @@ ignore:
   - .claude
   - CURSEFORGE.md
   - Spiritbound.png
+  - Spiritbound-shadow.png
+  - Spiritbound-hoods.png
   - README.md
   - .gitignore

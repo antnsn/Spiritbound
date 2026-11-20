@@ -1,7 +1,10 @@
+<p align="center"><img src="Spiritbound-hoods.png" width="180" alt="Spiritbound: the holy hood flickering into the shadow hood"></p>
+
 # Spiritbound
 
 A priest helper for **WoW: Forever**, part of the Bound family (Lightbound, Chronobound,
-Stormbound, Packbound). Easy for new priests, useful for all.
+Stormbound, Packbound, Felbound). Easy for new priests, useful for all. The emblem follows your
+spec: the white hood for holy and discipline, the purple one once you know a shadow talent.
 
 - **Buffs**: a card when Power Word: Fortitude, Inner Fire, Divine Spirit (talent) or Shadow
   Protection (if you want it) is missing or running out. Click it to cast. A Prayer from another
