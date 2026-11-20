@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "Spiritbound",
+  "project_id": "09cbef81-0334-452f-a36d-e1fe70b93b26"
+}
