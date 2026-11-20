@@ -6,7 +6,7 @@ Priest helper for WoW: Forever: a card when Fortitude, Inner Fire, Divine Spirit
 
 **The priest helper for World of Warcraft: Forever: your buffs and reagents, explained.**
 
-Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out, and a warning before candles or feathers run out. Everything is explained in plain words, so it's easy for a new priest and still handy for an old one.
+Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out, and a warning before candles or feathers run out.
 
 **Beta:** Spiritbound is new. Spell IDs come from Classic and are checked on Forever before 0.1.0; tell us what doesn't work.
 
