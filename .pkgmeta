@@ -1,0 +1,11 @@
+package-as: Spiritbound
+ignore:
+  - docs
+  - tests
+  - tools
+  - .luacheckrc
+  - wowbench.toml
+  - CLAUDE.md
+  - AGENTS.md
+  - .beads
+  - .claude

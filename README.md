@@ -1,0 +1,34 @@
+# Spiritbound
+
+A priest helper for **WoW: Forever**, part of the Bound family (Lightbound, Chronobound,
+Stormbound, Packbound). Easy for new priests, useful for all.
+
+- **Buffs**: a card when Power Word: Fortitude, Inner Fire, Divine Spirit (talent) or Shadow
+  Protection (if you want it) is missing or running out. Click it to cast. A Prayer from another
+  priest counts.
+- **Reagents**: says when candles for Prayer of Fortitude or Light Feathers for Levitate run low.
+- **Travel**: press Escape, and beside the game menu you get Levitate and your Hearthstone.
+- **Well-Rested and Well Fed** timers, plain-word explanations in tooltips, movable frames
+  (`/spirit unlock`), three skins (Spirit, Blizzard, Flat).
+
+Type `/spirit` for the options, `/spirit help` for the commands.
+
+## Install
+
+1. Open [Releases](https://github.com/antnsn/Spiritbound/releases) and download
+   `Spiritbound-<version>.zip` (not the green "Code > Download ZIP" button).
+2. Unzip it into `World of Warcraft/_forever_/Interface/AddOns/`, so you get `AddOns/Spiritbound`.
+3. Restart the game. Spiritbound only loads on priests.
+
+## Development
+
+Built on [LibBound](https://github.com/antnsn/LibBound), developed in the folder next to it.
+
+```bash
+tools/sync-libbound.sh
+for f in *.lua; do luac5.1 -p "$f"; done
+~/.luarocks/bin/luacheck .
+wowbench check . && wowbench test .
+wowbench pack . --set-version 0.1.0
+python3 tools/make_media.py
+```

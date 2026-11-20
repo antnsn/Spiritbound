@@ -1,0 +1,18 @@
+## Interface: 16001
+## Title: Spiritbound
+## Notes: Priest helper: Power Word: Fortitude, Inner Fire, Divine Spirit and Shadow Protection reminders (click to cast), candles and feathers, Well Rested and Well Fed, Levitate on the Escape menu. Explained for new players. /spirit for options.
+## Author: Rheolux
+## Version: @project-version@
+## IconTexture: Interface\AddOns\Spiritbound\Media\Icon64
+## SavedVariables: SpiritboundDB
+
+Libs\LibStub\LibStub.lua
+Libs\LibBound\LibBound.xml
+
+Core.lua
+Skin.lua
+Help.lua
+Buffs.lua
+Reagents.lua
+Travel.lua
+Options.lua
