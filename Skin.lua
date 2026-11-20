@@ -69,6 +69,7 @@ local spirit = {
 		glowEdge = { 0.96, 0.94, 1, 1 },
 		iconEdge = { 0.80, 0.78, 0.92, 0.9 },
 		frost = "Mist", frostTint = { 0.86, 0.82, 1, 0.12 },
+		crest = "Crest", crestTint = { 0.90, 0.85, 1, 0.15 },
 		shards = "Feather", shardTint = { 0.95, 0.94, 1, 0.9 },
 		rim = "Rim", breathe = true, breatheTime = 3.2,
 		burst = false, studs = false, ring = false, round = false,
