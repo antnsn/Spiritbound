@@ -37,6 +37,18 @@ for _, t in ipairs({ { "fortitude", -250, 200, true }, { "innerFire", -250, 140,
 end
 defaults.shadowProtection = false -- only when you want it (shadow damage fights)
 
+-- The emblem follows the spec: the shadow hood once a shadow talent spell is known (Shadowform,
+-- Vampiric Embrace, Mind Flay, Silence), else the holy one. LibBound asks on login and
+-- SPELLS_CHANGED and swaps the logo, minimap icon and crest ("...Shadow" files in Media).
+local SHADOW_TALENTS = { 15473, 15286, 15407, 15487 }
+function ns.EmblemVariant()
+	for _, id in ipairs(SHADOW_TALENTS) do
+		local ok, known = pcall(IsPlayerSpell, id)
+		if ok and not ns.IsSecret(known) and known then return "Shadow" end
+	end
+	return nil
+end
+
 ns.disabled = Bound:NewAddon(addonName, ns, {
 	class = "PRIEST",
 	title = "Spiritbound",
