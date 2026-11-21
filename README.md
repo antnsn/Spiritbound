@@ -11,6 +11,7 @@ spec: the white hood for holy and discipline, the purple one once you know a sha
   priest counts.
 - **Reagents**: says when candles for Prayer of Fortitude or Light Feathers for Levitate run low.
 - **Travel**: press Escape, and beside the game menu you get Levitate and your Hearthstone.
+- **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them.
 - **Well-Rested and Well Fed** timers, plain-word explanations in tooltips, movable frames
   (`/spirit unlock`), three skins (Spirit, Blizzard, Flat).
 

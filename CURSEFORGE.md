@@ -21,6 +21,7 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 - **Press Escape**: beside the game menu you get Levitate and your Hearthstone.
 
 ## Also in it
+- **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them.
 - **Well Rested and Well Fed**: a countdown before they run out, with a sound if you like.
 - **Explained**: hover over a card or button for a plain-word explanation of what it does and why (can be turned off).
 - **Your layout**: every frame can be moved, snapped to a grid and scaled (`/spirit unlock`).
