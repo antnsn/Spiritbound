@@ -3,7 +3,7 @@
 # Spiritbound
 
 A priest helper for **WoW: Forever**, part of the Bound family: one addon per class on the same
-core (Lightbound, Chronobound, Stormbound, Packbound, Spiritbound, Felbound, Dreambound).
+core (Lightbound, Chronobound, Stormbound, Packbound, Spiritbound, Felbound, Dreambound, Ragebound, Shadowbound).
 The emblem follows your spec: the white hood for holy and discipline, the purple one once you know
 a shadow talent.
 
