@@ -4,6 +4,7 @@
 ## X-License: GPL-3.0-or-later
 ## Author: Rheolux
 ## Version: @project-version@
+## X-Curse-Project-ID: 1820038
 ## IconTexture: Interface\AddOns\Spiritbound\Media\Icon64
 ## SavedVariables: SpiritboundDB
 
