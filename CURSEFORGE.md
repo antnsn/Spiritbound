@@ -43,7 +43,7 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 - **Feel free to contribute**: the code is on GitHub, https://github.com/antnsn/Spiritbound (issues and pull requests welcome).
 
 ## The Bound family
-Spiritbound is one of the Bound addons, one per class, built on the same core: Lightbound (paladin), Chronobound (mage), Stormbound (shaman), Packbound (hunter), Spiritbound (priest) and Felbound (warlock). They look like their class but work the same way, so if you know one, you know them all.
+Spiritbound is one of the Bound addons, one per class, built on the same core: Lightbound (paladin), Chronobound (mage), Stormbound (shaman), Packbound (hunter), Spiritbound (priest), Felbound (warlock) and Dreambound (druid). They look like their class but work the same way, so if you know one, you know them all.
 
 ## Changelog
 <!-- changelog:start -->
