@@ -9,3 +9,5 @@ wb.expect("panel with the menu", wb.shown("SpiritboundTravel"), true)
 local r = wb.ns.TravelRows()[1]
 wb.expect("Levitate", r.label, "Levitate")
 wb.expect("known", r.known, wb.mood == "levitate")
+-- the game's font has no arrow (it draws a box): plain text between the stone and the inn
+wb.expect("the Hearthstone row names the inn", wb.frame("SpiritboundTravelHearth").text:GetText(), "Hearthstone: Orgrimmar")
