@@ -8,7 +8,7 @@ Priest helper for WoW: Forever: one-click cards when Power Word: Fortitude, Inne
 
 Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out, and a warning before candles or feathers run out.
 
-**Full guide with screenshots: https://antnsn.github.io/Spiritbound/**
+**Full guide with screenshots:** https://antnsn.github.io/Spiritbound/
 
 **Beta:** Spiritbound is new. Spell IDs come from Classic and are checked on Forever before 0.1.0; tell us what doesn't work.
 
