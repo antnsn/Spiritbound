@@ -1,8 +1,9 @@
 # Changelog
 
-## Unreleased
+## 0.1.0 beta 5
 
 - **Buff key** (set it under Extras): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next party member in range who is missing it.
+- Built on the latest LibBound, the shared core of the Bound addons, with its small fixes. Published on CurseForge straight from GitHub now.
 
 ## 0.1.0 beta 4
 
