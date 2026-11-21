@@ -7,6 +7,8 @@ core (Lightbound, Chronobound, Stormbound, Packbound, Spiritbound, Felbound, Dre
 The emblem follows your spec: the white hood for holy and discipline, the purple one once you know
 a shadow talent.
 
+Full guide with screenshots: https://antnsn.github.io/Spiritbound/
+
 - **Buffs**: a card when Power Word: Fortitude, Inner Fire, Divine Spirit (talent) or Shadow
   Protection (if you want it) is missing or running out. Click it to cast. A Prayer from another
   priest counts.
