@@ -34,3 +34,13 @@ for _, b in ipairs(BUFFS) do
 		goneText = "Missing: click to cast",
 	})
 end
+
+-- the buff key (LibBound) also gives these to the group, on the next member in range missing them
+-- (only the ones turned on: Shadow Protection is off until you want it)
+for _, b in ipairs(BUFFS) do
+	if b.group then
+		ns.groupBuffs[#ns.groupBuffs + 1] = { list = b.list,
+			names = function() return { BuffName(b.list, b.label), BuffName(b.group, b.groupName) } end,
+			enabled = function() return ns.db[b.key] ~= false end }
+	end
+end

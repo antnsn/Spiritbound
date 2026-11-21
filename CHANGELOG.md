@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Buff key** (set it under Extras): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next party member in range who is missing it.
+
 ## 0.1.0 beta 4
 
 - **The emblem follows your spec**: the white hood for holy and discipline, the purple hood once you know a shadow talent spell (Shadowform, Vampiric Embrace, Mind Flay or Silence). It changes by itself when you respec.
