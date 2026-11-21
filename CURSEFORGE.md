@@ -1,5 +1,5 @@
 <!-- summary (CurseForge "Summary" field, at most 256 characters):
-Priest helper for WoW: Forever: a card when Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out, and a warning before candles or feathers run out.
+Priest helper for WoW: Forever: one-click cards when Power Word: Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out, warnings before candles or feathers run out, and Levitate and your Hearthstone beside the Escape menu.
 -->
 
 # Spiritbound
