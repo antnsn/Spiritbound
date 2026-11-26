@@ -58,6 +58,13 @@ In `/spirit`, page **Buffs**. Each buff has its own row with three switches:
 | Sound | Off | Plays the raid warning sound with the messages. |
 | When missing | On | Shows the **Missing: click to cast** card and the one-time "is gone, rebuff" message when the buff is gone. Off: you only get the warning and countdown before it runs out. For Shadow Protection it only matters once **Show** is on. |
 
+Under **Group buffs** on the same page:
+
+| Setting | Default | What it does |
+| --- | --- | --- |
+| A card with who in the group lacks a buff | On | In a party or raid, out of combat: a **Group needs buffs** card with how many lack each buff (for example `Fortitude 2 · Spirit 1`). Hover it to see their names. Players too far away to cast on count too; the buff key gets them once they are in range. Gone when everyone has the buffs. |
+| Buff key: a Prayer when this many in a group need it | 3 | See [Buff key](buff-key.html). 0: never a Prayer, only single casts. |
+
 ![The Buffs page in the options]({{ '/screenshots/skins/blizzard/options-buffs.png' | relative_url }})
 
 ## Good to know

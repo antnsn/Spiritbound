@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Who lacks a buff**: in a party or raid, out of combat, a card shows how many lack Fortitude, Divine Spirit or Shadow Protection (`Fortitude 2 · Spirit 1`); hover it for their names. Movable like the other cards; turn it off on the Buffs page, under Group buffs.
+
 ## 0.1.0 beta 6
 
 - **Buff key uses the Prayers on groups and raids**: when 3 or more in a party or raid group need Fortitude, Divine Spirit or Shadow Protection and you have the candle, one press casts the Prayer version on that group. Set how many on the Buffs page (0 turns it off). Without a candle it casts the single buffs as before.
