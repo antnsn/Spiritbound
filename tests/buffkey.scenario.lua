@@ -1,9 +1,9 @@
---@moods: self group groupbuffed far dead shadowoff nothing bind combat unreadable
+--@moods: self group groupbuffed far dead shadowoff nothing bind combat unreadable low
 -- the buff key (LibBound): each press casts the next thing needed: the top card's spell (your own
 -- buffs), else a group buff on the next party member in range who is missing it
 local T = dofile(wb.dir .. "/tests/_priest.lua")
 local m = wb.mood
-T.priest({ 1243, 588 }) -- Power Word: Fortitude, Inner Fire
+T.priest(m == "low" and { 1243, 1244, 1245, 2791, 10937, 10938, 588 } or { 1243, 588 }) -- Fortitude (all ranks for "low"), Inner Fire
 local s = wb.state
 local function aura(name) return { name = name, spellId = 1, duration = 1800, expirationTime = 9999999, sourceUnit = "player" } end
 if m ~= "self" then s.auras.player = { aura("Power Word: Fortitude"), aura("Inner Fire") } end
@@ -16,6 +16,7 @@ G.UnitCanAssist = function(_, unit) return wb.unit(unit) ~= nil end -- not in th
 if m ~= "self" and m ~= "nothing" and m ~= "bind" then
 	local p = { unit = "party1", name = "Friend", classFile = "WARRIOR" }
 	if m == "far" then p.far = true end
+	if m == "low" then p.level = 22 end -- rank 6 (level 60) can't go on a level 22: rank 3 (level 24) can
 	if m == "dead" then p.dead = true end
 	local members = { p }
 	if m == "unreadable" then members[2] = { unit = "party2", name = "Other", classFile = "MAGE" } end
@@ -56,6 +57,12 @@ elseif m == "combat" then
 	wb.combat(false)
 	wb.advance(1)
 	wb.expect("it works again after the fight", key:GetAttribute("type"), "macro")
+elseif m == "low" then
+	wb.expect("a lower rank, cast by its spell ID", key:GetAttribute("type"), "spell")
+	wb.expect("the best rank a level 22 can take", key:GetAttribute("spell"), 1245)
+	wb.expect("on them", key:GetAttribute("unit"), "party1")
+	key:GetScript("PostClick")(key, "LeftButton", false)
+	wb.check(not wb.printed("nothing to buff"), "a press is not 'nothing to buff'")
 elseif m == "unreadable" then
 	wb.expect("a member whose buffs can't be read is skipped", macro, "/cast [nocombat,@party2] Power Word: Fortitude")
 end

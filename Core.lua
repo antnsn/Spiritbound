@@ -14,6 +14,12 @@ ns.DATA = {
 	shadowProtection = { 976, 10957, 10958 },
 	prayerShadow = { 27683 },
 	levitate = 1706,
+	-- each rank's spell level, as the lists above (Classic): a rank goes on someone at most 10 below
+	levels = {
+		fortitude = { 1, 12, 24, 36, 48, 60 }, prayerFortitude = { 48, 60 },
+		divineSpirit = { 30, 40, 50, 60 }, prayerSpirit = { 60 },
+		shadowProtection = { 30, 42, 56 }, prayerShadow = { 56 },
+	},
 	holyCandle = 17028, sacredCandle = 17029, lightFeather = 17056,
 }
 

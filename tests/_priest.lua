@@ -1,7 +1,8 @@
 -- shared setup: a priest with the given spells known (loaded with dofile)
 local M = {}
 local NAMES = {
-	[1243] = "Power Word: Fortitude", [1244] = "Power Word: Fortitude", [21562] = "Prayer of Fortitude",
+	[1243] = "Power Word: Fortitude", [1244] = "Power Word: Fortitude", [1245] = "Power Word: Fortitude",
+	[2791] = "Power Word: Fortitude", [10937] = "Power Word: Fortitude", [10938] = "Power Word: Fortitude", [21562] = "Prayer of Fortitude",
 	[21564] = "Prayer of Fortitude", [588] = "Inner Fire", [14752] = "Divine Spirit", [27681] = "Prayer of Spirit",
 	[976] = "Shadow Protection", [27683] = "Prayer of Shadow Protection", [1706] = "Levitate", [429959] = "Well-Rested",
 }
