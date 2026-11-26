@@ -9,13 +9,13 @@ local function Name(list) local id = ns.BestRank(list) return id and ns.SpellNam
 local function BuffName(list, english) return ns.SpellName(list[1]) or english end
 
 local BUFFS = {
-	{ key = "fortitude", frame = "SpiritboundFortitudeFrame", label = "Power Word: Fortitude", icon = 135987,
+	{ key = "fortitude", frame = "SpiritboundFortitudeFrame", label = "Power Word: Fortitude", short = "Fortitude", icon = 135987,
 		list = D.fortitude, group = D.prayerFortitude, groupName = "Prayer of Fortitude",
 		candles = { D.holyCandle, D.sacredCandle } }, -- per rank of the Prayer
 	{ key = "innerFire", frame = "SpiritboundInnerFireFrame", label = "Inner Fire", icon = 135926, list = D.innerFire },
-	{ key = "divineSpirit", frame = "SpiritboundDivineSpiritFrame", label = "Divine Spirit", icon = 135898,
+	{ key = "divineSpirit", frame = "SpiritboundDivineSpiritFrame", label = "Divine Spirit", short = "Spirit", icon = 135898,
 		list = D.divineSpirit, group = D.prayerSpirit, groupName = "Prayer of Spirit", candles = { D.sacredCandle } },
-	{ key = "shadowProtection", frame = "SpiritboundShadowProtectionFrame", label = "Shadow Protection", icon = 136121,
+	{ key = "shadowProtection", frame = "SpiritboundShadowProtectionFrame", label = "Shadow Protection", short = "Shadow Protection", icon = 136121,
 		list = D.shadowProtection, group = D.prayerShadow, groupName = "Prayer of Shadow Protection",
 		candles = { D.sacredCandle } },
 }
@@ -47,7 +47,7 @@ end
 -- one group need it and its candle (for the best rank known) is in the bags
 for _, b in ipairs(BUFFS) do
 	if b.group then
-		ns.groupBuffs[#ns.groupBuffs + 1] = { list = b.list,
+		ns.groupBuffs[#ns.groupBuffs + 1] = { list = b.list, short = b.short, icon = b.icon,
 			names = function() return { BuffName(b.list, b.label), BuffName(b.group, b.groupName) } end,
 			enabled = function() return ns.db[b.key] ~= false end,
 			prayer = function()

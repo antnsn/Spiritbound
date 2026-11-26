@@ -23,7 +23,7 @@ local function Timer(key, x, y, keep)
 end
 local defaults = {
 	skin = "spirit",
-	candles = true, candleLow = 5, prayerMin = 3, feathers = true, featherLow = 3,
+	candles = true, candleLow = 5, prayerMin = 3, groupCard = true, feathers = true, featherLow = 3,
 	rgPoint = { "CENTER", "UIParent", "CENTER", 250, 200 },
 	travel = true,
 	wrPoint = { "CENTER", "UIParent", "CENTER", 0, 320 },
