@@ -1,4 +1,4 @@
---@moods: party few nocandle off raid raidself rank2holy
+--@moods: party few nocandle off raid raidself rank2holy lowmember
 -- the buff key with the Prayer spells: when enough of one group (party, or raid subgroup) need a
 -- buff and you have the candle, one Prayer instead of single casts
 local T = dofile(wb.dir .. "/tests/_priest.lua")
@@ -29,6 +29,7 @@ else
 	local n = m == "few" and 2 or 3
 	local members = {}
 	for i = 1, n do members[i] = P("Friend" .. i) end
+	if m == "lowmember" then members[3].level = 22 end -- Prayer of Fortitude (level 48) can't reach them
 	wb.join(members)
 end
 wb.advance(7)
@@ -53,6 +54,9 @@ elseif m == "raid" then
 elseif m == "raidself" then
 	wb.expect("you and two others in your group: a Prayer, before your own card", macro,
 		"/cast [nocombat,@player] Prayer of Fortitude")
+elseif m == "lowmember" then
+	wb.check(not macro:find("Prayer", 1, true), "one too low for the Prayer: no Prayer on that group: " .. macro)
+	wb.expect("single casts instead", macro, "/cast [nocombat,@party1] Power Word: Fortitude")
 elseif m == "rank2holy" then
 	wb.expect("rank 2 needs Sacred Candles: with Holy Candles only, single casts", macro,
 		"/cast [nocombat,@party1] Power Word: Fortitude")

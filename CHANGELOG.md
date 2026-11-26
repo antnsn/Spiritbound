@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Buff key: the right rank for lower-level players**: someone more than 10 levels below a rank gets the best rank they can take (a level 22 gets Fortitude rank 3), and a Prayer skips a group with someone too low for it.
 - **Who lacks a buff**: in a party or raid, out of combat, a card shows how many lack Fortitude, Divine Spirit or Shadow Protection (`Fortitude 2 · Spirit 1`); hover it for their names. Movable like the other cards; turn it off on the Buffs page, under Group buffs.
 
 ## 0.1.0 beta 6

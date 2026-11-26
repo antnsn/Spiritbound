@@ -25,6 +25,7 @@ The buff key is new and not in a CurseForge release yet. It is listed under **Un
 - **Candles:** Prayer of Fortitude rank 1 uses a Holy Candle, rank 2 and the other Prayers a Sacred Candle. The key uses the best rank you know; without its candle it casts the single buffs instead.
 - **How many:** set it on the **Buffs** page, under **Group buffs** (default 3). At 0 the key never casts a Prayer.
 - A buff with less than 1 minute left counts as missing.
+- **Lower-level players get the rank they can take.** A buff only goes on someone at most 10 levels below the rank's spell level, so a level 22 gets Power Word: Fortitude rank 3, not rank 6. A Prayer is skipped for a group with someone too low for it; they get single casts instead.
 - The group version counts: someone with Prayer of Fortitude doesn't get Power Word: Fortitude on top. Single casts use the highest rank you know.
 - It skips players who are offline, dead, not friendly, too far away or out of range of the spell.
 - Only the buffs you watch go to the group: a buff with **Show** off on the **Buffs** page is skipped. Shadow Protection starts off, so it is skipped until you turn it on. Divine Spirit is skipped until you have the talent.
