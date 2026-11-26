@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.0 beta 6
 
 - **Buff key uses the Prayers on groups and raids**: when 3 or more in a party or raid group need Fortitude, Divine Spirit or Shadow Protection and you have the candle, one press casts the Prayer version on that group. Set how many on the Buffs page (0 turns it off). Without a candle it casts the single buffs as before.
 - **Carrot on a Stick** (Extras page, off by default): put it on when you mount, in the trinket slot you pick, and your own trinket back when you get off. Not in instances; in combat it waits until the fight is over. From LibBound, the same as in Lightbound.

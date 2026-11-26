@@ -23,7 +23,7 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 - **Press Escape**: beside the game menu you get Levitate and your Hearthstone.
 
 ## Also in it
-- **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them.
+- **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them. When 3 or more in a party or raid group need a buff and you have the candle, it casts the Prayer version on the whole group.
 - **Well Rested and Well Fed**: a countdown before they run out, with a sound if you like.
 - **Carrot on a Stick** (Extras page, off by default): worn while you ride, in the trinket slot you pick; your own trinket goes back on when you get off. Not in instances, and never in combat.
 - **Explained**: hover over a card or button for a plain-word explanation of what it does and why (can be turned off).
@@ -51,6 +51,12 @@ Spiritbound is one of the Bound addons, one per class, built on the same core: L
 
 ## Changelog
 <!-- changelog:start -->
+### 0.1.0 beta 6
+
+- **Buff key uses the Prayers on groups and raids**: when 3 or more in a party or raid group need Fortitude, Divine Spirit or Shadow Protection and you have the candle, one press casts the Prayer version on that group. Set how many on the Buffs page (0 turns it off). Without a candle it casts the single buffs as before.
+- **Carrot on a Stick** (Extras page, off by default): put it on when you mount, in the trinket slot you pick, and your own trinket back when you get off. Not in instances; in combat it waits until the fight is over. From LibBound, the same as in Lightbound.
+- The Extras page is tidier: the Well-Rested and Well Fed switches sit in one row each.
+
 ### 0.1.0 beta 5
 
 - **Buff key** (set it under Extras): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next party member in range who is missing it.

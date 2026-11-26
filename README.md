@@ -14,7 +14,7 @@ Full guide with screenshots: https://antnsn.github.io/Spiritbound/
   priest counts.
 - **Reagents**: says when candles for Prayer of Fortitude or Light Feathers for Levitate run low.
 - **Travel**: press Escape, and beside the game menu you get Levitate and your Hearthstone.
-- **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them.
+- **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them. With a candle and 3 or more in one group missing a buff, the Prayer version instead.
 - **Well-Rested and Well Fed** timers, plain-word explanations in tooltips, movable frames
   (`/spirit unlock`), three skins (Spirit, Blizzard, Flat).
 
