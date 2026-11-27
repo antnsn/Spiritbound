@@ -52,6 +52,10 @@ Spiritbound is one of the Bound addons, one per class, built on the same core: L
 
 ## Changelog
 <!-- changelog:start -->
+### 0.1.0 beta 8
+
+- **Who buffs the group, shared with Buffy and Priestly**: in a party or raid, the Extras page has a **Who buffs the group** section where you take or release Prayer of Fortitude, Prayer of Spirit or Prayer of Shadow Protection. Other priests see the same assignments, whether they run Spiritbound, Buffy or Priestly. While another priest has a buff, your buff key and the group card leave it to them. When they go offline it's yours to cast again. `/spirit assign` lists who has what.
+
 ### 0.1.0 beta 7
 
 - **Buff key: the right rank for lower-level players**: someone more than 10 levels below a rank gets the best rank they can take (a level 22 gets Fortitude rank 3), and a Prayer skips a group with someone too low for it.

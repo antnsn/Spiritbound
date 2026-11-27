@@ -33,7 +33,7 @@ Press one key, out of combat, and Spiritbound casts the next buff that is needed
 With more than one priest in a party or raid, you can split the Prayers between you. Whoever has a buff keeps the whole group on it, and the others leave it alone.
 
 {: .note }
-New and not in a CurseForge release yet. It is listed under **Unreleased** in the changelog.
+New in 0.1.0 beta 8.
 
 - Open `/spirit`, page **Extras**, section **Who buffs the group**. Each Prayer has a row with who has it and a **Take** or **Release** button.
 - **Take** makes the buff yours. The other priests see it at once, and their buff key and group card skip it. Yours keeps the whole group on it, even Shadow Protection while its card is off.
