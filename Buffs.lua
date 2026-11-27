@@ -49,7 +49,8 @@ end
 -- one group need it and its candle (for the best rank known) is in the bags
 for _, b in ipairs(BUFFS) do
 	if b.group then
-		ns.groupBuffs[#ns.groupBuffs + 1] = { list = b.list, short = b.short, icon = b.icon, levels = b.levels,
+		-- slot: shared with other priests (Spiritbound, Buffy, Priestly): who buffs the group
+		ns.groupBuffs[#ns.groupBuffs + 1] = { list = b.list, short = b.short, icon = b.icon, levels = b.levels, slot = b.list[1],
 			names = function() return { BuffName(b.list, b.label), BuffName(b.group, b.groupName) } end,
 			enabled = function() return ns.db[b.key] ~= false end,
 			prayer = function()

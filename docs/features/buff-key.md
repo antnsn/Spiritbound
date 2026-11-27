@@ -9,9 +9,6 @@ description: One key that casts what a card asks for, then Fortitude, Divine Spi
 
 Press one key, out of combat, and Spiritbound casts the next buff that is needed: first your own, then the group's.
 
-{: .note }
-The buff key is new and not in a CurseForge release yet. It is listed under **Unreleased** in the changelog.
-
 ## What it does
 
 - Each press casts **one** spell: the next thing that is needed.
@@ -30,6 +27,24 @@ The buff key is new and not in a CurseForge release yet. It is listed under **Un
 - It skips players who are offline, dead, not friendly, too far away or out of range of the spell.
 - Only the buffs you watch go to the group: a buff with **Show** off on the **Buffs** page is skipped. Shadow Protection starts off, so it is skipped until you turn it on. Divine Spirit is skipped until you have the talent.
 - When there is nothing to do, a press says `nothing to buff right now.` in chat.
+
+## Sharing the buffs with other priests
+
+With more than one priest in a party or raid, you can split the Prayers between you. Whoever has a buff keeps the whole group on it, and the others leave it alone.
+
+{: .note }
+New and not in a CurseForge release yet. It is listed under **Unreleased** in the changelog.
+
+- Open `/spirit`, page **Extras**, section **Who buffs the group**. Each Prayer has a row with who has it and a **Take** or **Release** button.
+- **Take** makes the buff yours. The other priests see it at once, and their buff key and group card skip it. Yours keeps the whole group on it, even Shadow Protection while its card is off.
+- **Release** gives it back, and everyone buffs it again.
+- **It works with Buffy and Priestly.** Spiritbound uses the same assignment messages, so a priest on Buffy sees your choice and you see theirs.
+- **Someone goes away:** when the priest with a buff goes offline, leaves, or hasn't been heard from for 3 minutes, the buff counts as nobody's, and your key buffs it again. The assignment comes back when they do.
+- To take a buff, you need its Prayer (the group version). Only a priest who can cast the Prayer counts as having it.
+- A line in chat tells you when someone else gives you a buff, takes one over, or goes away.
+- `/spirit assign` lists who has each Prayer, and `/spirit assign 2` takes or releases the second one.
+- Assignments are not saved. After a `/reload` Spiritbound asks the group again.
+- You can't change them in combat.
 
 ## How to use it
 
@@ -56,7 +71,7 @@ No. The game does not let addons pick targets for you in combat, so the key does
 Common reasons: the player is out of range, or Spiritbound can't read their buffs. When some of a player's buffs are hidden from addons, Spiritbound counts that player as buffed rather than nag you.
 
 **Does it use Prayer of Fortitude?**
-No. The key casts Power Word: Fortitude, Divine Spirit and Shadow Protection one player at a time. Cast the Prayer versions yourself.
+Yes, when enough of one group need it and you have the candle. See step 1 above.
 
 **My key does something else in the game too.**
 Spiritbound binds the key on top of your normal bindings while it is set. Pick a key you don't use for anything else, or **Clear** it to get the old binding back.
