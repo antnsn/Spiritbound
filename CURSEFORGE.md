@@ -24,7 +24,7 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 
 ## Also in it
 - **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them. When 3 or more in a party or raid group need a buff and you have the candle, it casts the Prayer version on the whole group.
-- **Who buffs the group** (Extras page): take or release each Prayer, shared with the other priests in your group, whether they run Spiritbound, Buffy or Priestly. A buff someone else has is left to them.
+- **Who buffs the group** (Group page): take or release each Prayer, shared with the other priests in your group, whether they run Spiritbound, Buffy or Priestly. A buff someone else has is left to them.
 - **Well Rested and Well Fed**: a countdown before they run out, with a sound if you like.
 - **Carrot on a Stick** (Extras page, off by default): worn while you ride, in the trinket slot you pick; your own trinket goes back on when you get off. Not in instances, and never in combat.
 - **Explained**: hover over a card or button for a plain-word explanation of what it does and why (can be turned off).
@@ -52,6 +52,10 @@ Spiritbound is one of the Bound addons, one per class, built on the same core: L
 
 ## Changelog
 <!-- changelog:start -->
+### 0.1.0 beta 9
+
+- **Who buffs the group has its own page, Group**: on the Extras page it pushed Carrot on a Stick off the bottom of the window. **Take** is grey until you know the Prayer, because a priest who can't cast it can't have it.
+
 ### 0.1.0 beta 8
 
 - **Who buffs the group, shared with Buffy and Priestly**: in a party or raid, the Extras page has a **Who buffs the group** section where you take or release Prayer of Fortitude, Prayer of Spirit or Prayer of Shadow Protection. Other priests see the same assignments, whether they run Spiritbound, Buffy or Priestly. While another priest has a buff, your buff key and the group card leave it to them. When they go offline it's yours to cast again. `/spirit assign` lists who has what.

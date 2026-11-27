@@ -35,7 +35,7 @@ With more than one priest in a party or raid, you can split the Prayers between 
 {: .note }
 New in 0.1.0 beta 8.
 
-- Open `/spirit`, page **Extras**, section **Who buffs the group**. Each Prayer has a row with who has it and a **Take** or **Release** button.
+- Open `/spirit`, page **Group**. Each Prayer has a row with who has it and a **Take** or **Release** button. **Take** is grey until you know the Prayer.
 - **Take** makes the buff yours. The other priests see it at once, and their buff key and group card skip it. Yours keeps the whole group on it, even Shadow Protection while its card is off.
 - **Release** gives it back, and everyone buffs it again.
 - **It works with Buffy and Priestly.** Spiritbound uses the same assignment messages, so a priest on Buffy sees your choice and you see theirs.
