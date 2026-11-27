@@ -10,7 +10,7 @@ description: A grid of your group that shows who has Magic or a Disease you can 
 See at a glance who has a Magic debuff or a Disease you can remove, and remove it with one click or one key, in combat too.
 
 {: .note }
-New and not in a CurseForge release yet. It is listed under **Unreleased** in the changelog. The same frame as Lightbound's Cleanse, shared through LibBound.
+New in 0.1.0. The same frame as Lightbound's Cleanse, shared through LibBound.
 
 ## What it does
 
