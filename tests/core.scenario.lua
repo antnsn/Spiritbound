@@ -8,7 +8,7 @@ if wb.mood == "priest" then
 	wb.check(wb.shown("SpiritboundOptions"), "/spirit opens the options")
 	local titles = {}
 	for _, p in ipairs(wb.ns.optionsState.pages) do titles[#titles + 1] = p.title end
-	wb.expect("pages", table.concat(titles, ", "), "Buffs, Reagents, Travel, Extras, Group, Skin")
+	wb.expect("pages", table.concat(titles, ", "), "Buffs, Reagents, Dispel, Travel, Extras, Group, Skin")
 else
 	wb.state.player.classFile, wb.state.player.class = "WARLOCK", "Warlock"
 	wb.login()

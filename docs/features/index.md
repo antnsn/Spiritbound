@@ -12,6 +12,7 @@ Spiritbound does a few small priest jobs for you. Each page below covers one of 
 - [Buffs](buffs.html): a card when Fortitude, Inner Fire, Divine Spirit or Shadow Protection is missing or running out. Click to cast.
 - [Buff key](buff-key.html): one key that casts what a card asks for, then your group buffs on the next group member who needs them.
 - [Reagents](reagents.html): a card when candles or Light Feathers run low.
+- [Dispel](dispel.html): a grid of your group with Dispel Magic on a click and Cure Disease on a right-click.
 - [Travel panel](travel.html): Levitate and your Hearthstone beside the game menu.
 - [Well-Rested and Well Fed](well-rested-and-well-fed.html): a warning and a countdown before they run out.
 - [Explanations](explanations.html): what each card and button does, in the tooltip.
