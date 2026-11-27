@@ -1,9 +1,9 @@
---@moods: owned mine away cleared solo
+--@moods: owned mine away cleared solo low
 -- assignments (LibBound Assign.lua, the LibGroupBuffs v1 protocol Buffy and Priestly speak): a
 -- Prayer another live priest owns is left to them by the buff key; one you own is yours
 local T = dofile(wb.dir .. "/tests/_priest.lua")
 local m = wb.mood
-T.priest({ 1243, 588, 21562 }) -- Fortitude, Inner Fire, Prayer of Fortitude
+T.priest(m == "low" and { 1243, 588 } or { 1243, 588, 21562 }) -- Fortitude, Inner Fire, Prayer of Fortitude (not at "low")
 local s = wb.state
 local function aura(name) return { name = name, spellId = 1, duration = 1800, expirationTime = 9999999, sourceUnit = "player" } end
 s.auras.player = { aura("Power Word: Fortitude"), aura("Inner Fire") }
@@ -25,7 +25,14 @@ wb.join({ { unit = "party1", name = "Pia", classFile = "PRIEST" }, { unit = "par
 wb.advance(5)
 wb.expect("before any assignment the key buffs the group", Macro(), "/cast [nocombat,@party1] Power Word: Fortitude")
 
-if m == "owned" or m == "away" or m == "cleared" then
+if m == "low" then
+	local L = G.LibStub("LibBound-1.0")
+	local text, action = L.AssignState(1243)
+	wb.expect("a level 11 can't take a Prayer it can't cast", action, nil)
+	wb.expect("and is told why", text, "Nobody (you can't cast it yet)")
+	wb.slash("/spirit assign 1")
+	wb.expect("so /spirit assign 1 takes nothing", L.AssignRecorded(1243), nil)
+elseif m == "owned" or m == "away" or m == "cleared" then
 	Msg("1^H^PRIEST^21562,27681^0") -- Pia's hello: she can cast Prayer of Fortitude
 	Msg("1^A^1243^1000^Pia^Pia") -- and owns Fortitude
 	wb.advance(1)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0 beta 9
+
+- **Who buffs the group has its own page, Group**: on the Extras page it pushed Carrot on a Stick off the bottom of the window. **Take** is grey until you know the Prayer, because a priest who can't cast it can't have it.
+
 ## 0.1.0 beta 8
 
 - **Who buffs the group, shared with Buffy and Priestly**: in a party or raid, the Extras page has a **Who buffs the group** section where you take or release Prayer of Fortitude, Prayer of Spirit or Prayer of Shadow Protection. Other priests see the same assignments, whether they run Spiritbound, Buffy or Priestly. While another priest has a buff, your buff key and the group card leave it to them. When they go offline it's yours to cast again. `/spirit assign` lists who has what.
