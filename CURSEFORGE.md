@@ -16,11 +16,15 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 - **Power Word: Fortitude, Inner Fire, Divine Spirit** (talent) and **Shadow Protection** (when you turn it on): a card when one is missing or about to run out. Click it to cast.
 - A **Prayer** from another priest counts, so you don't overwrite it.
 
+![The buff cards, the reagents card and the group card](https://antnsn.github.io/Spiritbound/screenshots/cards.png)
+
 ## Reagents
 - Says when your **Holy or Sacred Candles** (for Prayer of Fortitude) or **Light Feathers** (for Levitate) run low.
 
 ## Travel
 - **Press Escape**: beside the game menu you get Levitate and your Hearthstone.
+
+![The travel panel beside the game menu](https://antnsn.github.io/Spiritbound/screenshots/travel.png)
 
 ## Also in it
 - **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them. When 3 or more in a party or raid group need a buff and you have the candle, it casts the Prayer version on the whole group.
@@ -31,6 +35,10 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 - **Your layout**: every frame can be moved, snapped to a grid and scaled (`/spirit unlock`).
 - **Three skins**: the priest look, Blizzard and Flat.
 - Loads on priests only.
+
+![Who buffs the group: the Group page](https://antnsn.github.io/Spiritbound/screenshots/options-group.png)
+
+![The Buffs page in the options](https://antnsn.github.io/Spiritbound/screenshots/options-buffs.png)
 
 ## Commands
 - `/spirit`: open the options

@@ -18,7 +18,7 @@ Prayer of Fortitude uses a candle and Levitate uses a Light Feather. Spiritbound
 - The card is hidden in combat and comes back after the fight.
 - It updates when your bags change, so it goes away as soon as you buy more.
 
-![The reagents card, unlocked]({{ '/screenshots/skins/blizzard/frames/rgpoint.png' | relative_url }})
+![The reagents card, unlocked]({{ '/screenshots/frames/rgpoint.png' | relative_url }})
 
 The shot shows the card unlocked, with sample text, in the Blizzard skin.
 
@@ -41,7 +41,7 @@ In `/spirit`, page **Reagents**:
 | Warn when Light Feathers run low | On | The feather part of the card. |
 | Feathers: warn at | 3 | Warns at this many feathers or fewer, 0 to 20. |
 
-![The Reagents page in the options]({{ '/screenshots/skins/blizzard/options-reagents.png' | relative_url }})
+![The Reagents page in the options]({{ '/screenshots/options-reagents.png' | relative_url }})
 
 ## Good to know
 

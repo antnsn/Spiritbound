@@ -46,7 +46,7 @@ In `/spirit`, page **Skin**, section **General**:
 
 `/spirit explain` turns it on or off from chat.
 
-![The Skin page, with the General switches]({{ '/screenshots/skins/blizzard/options-skin.png' | relative_url }})
+![The Skin page, with the General switches]({{ '/screenshots/options-skin.png' | relative_url }})
 
 ## Good to know
 
