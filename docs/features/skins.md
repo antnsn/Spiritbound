@@ -21,7 +21,7 @@ The screenshots on this site show the Blizzard skin.
 
 ## How to switch
 
-![The Skin page in the options]({{ '/screenshots/skins/blizzard/options-skin.png' | relative_url }})
+![The Skin page in the options]({{ '/screenshots/options-skin.png' | relative_url }})
 
 1. Type `/spirit` and open the **Skin** page.
 2. Click the **Skin** button to step through the skins (right-click goes back).

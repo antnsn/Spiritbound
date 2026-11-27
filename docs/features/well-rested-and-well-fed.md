@@ -16,8 +16,8 @@ Two buffs that help while you level on Forever: Well-Rested from a Cozy Sleeping
 - **Well Fed is gone.** When Well Fed drops off, a message says so.
 - **Rebuff warning.** Optional, off by default: when the buff is gone, a card stays up and, once out of combat and while you are alive, a message says `Well-Rested is gone, rebuff`.
 
-![The Well-Rested card, unlocked]({{ '/screenshots/skins/blizzard/frames/wrpoint.png' | relative_url }})
-![The Well Fed card, unlocked]({{ '/screenshots/skins/blizzard/frames/wfpoint.png' | relative_url }})
+![The Well-Rested card, unlocked]({{ '/screenshots/frames/wrpoint.png' | relative_url }})
+![The Well Fed card, unlocked]({{ '/screenshots/frames/wfpoint.png' | relative_url }})
 
 The shots show the cards unlocked, with sample text, in the Blizzard skin.
 
@@ -39,7 +39,7 @@ In `/spirit`, page **Extras**. Well-Rested and Well Fed each have the same setti
 | Warn with time left | Well-Rested 5 min, Well Fed 3 min | When the warning comes, 1 to 30 minutes. |
 | Test | | Shows the warning now, as it will look. |
 
-![The Extras page in the options]({{ '/screenshots/skins/blizzard/options-extras.png' | relative_url }})
+![The Extras page in the options]({{ '/screenshots/options-extras.png' | relative_url }})
 
 This shot was taken before the [buff key](buff-key.html) was added to the top of the Extras page.
 

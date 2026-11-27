@@ -16,7 +16,7 @@ Press Escape and a small **Travel** panel opens beside the game menu, with Levit
 - **Hearthstone** is listed below, with the inn it is set to, for example `Hearthstone: Gallows' End Tavern`. The row only shows while you carry a Hearthstone.
 - Click a row to cast it. The game menu closes after the click.
 
-![The travel panel beside the game menu]({{ '/screenshots/skins/blizzard/travel.png' | relative_url }})
+![The travel panel beside the game menu]({{ '/screenshots/travel.png' | relative_url }})
 
 The shot shows the panel in the Blizzard skin, on a priest who hasn't learned Levitate yet.
 
@@ -33,7 +33,7 @@ In `/spirit`, page **Travel**:
 | --- | --- | --- |
 | Show the travel panel when the game menu opens | On | Turns the panel on or off. |
 
-![The Travel page in the options]({{ '/screenshots/skins/blizzard/options-travel.png' | relative_url }})
+![The Travel page in the options]({{ '/screenshots/options-travel.png' | relative_url }})
 
 ## Good to know
 

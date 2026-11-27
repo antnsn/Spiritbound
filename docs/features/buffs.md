@@ -30,13 +30,13 @@ For each one:
 
 The card goes away as soon as the buff is back.
 
-![The Power Word: Fortitude card, unlocked]({{ '/screenshots/skins/blizzard/frames/fortitudepoint.png' | relative_url }})
+![The Power Word: Fortitude card, unlocked]({{ '/screenshots/frames/fortitudepoint.png' | relative_url }})
 
 The other three cards look the same:
 
-![The Inner Fire card]({{ '/screenshots/skins/blizzard/frames/innerfirepoint.png' | relative_url }})
-![The Divine Spirit card]({{ '/screenshots/skins/blizzard/frames/divinespiritpoint.png' | relative_url }})
-![The Shadow Protection card]({{ '/screenshots/skins/blizzard/frames/shadowprotectionpoint.png' | relative_url }})
+![The Inner Fire card]({{ '/screenshots/frames/innerfirepoint.png' | relative_url }})
+![The Divine Spirit card]({{ '/screenshots/frames/divinespiritpoint.png' | relative_url }})
+![The Shadow Protection card]({{ '/screenshots/frames/shadowprotectionpoint.png' | relative_url }})
 
 These shots show the cards unlocked, with sample text, in the Blizzard skin.
 
@@ -65,7 +65,9 @@ Under **Group buffs** on the same page:
 | A card with who in the group lacks a buff | On | In a party or raid, out of combat: a **Group needs buffs** card with how many lack each buff (for example `Fortitude 2 · Spirit 1`). Hover it to see their names. Players too far away to cast on count too; the buff key gets them once they are in range. Gone when everyone has the buffs. |
 | Buff key: a Prayer when this many in a group need it | 3 | See [Buff key](buff-key.html). 0: never a Prayer, only single casts. |
 
-![The Buffs page in the options]({{ '/screenshots/skins/blizzard/options-buffs.png' | relative_url }})
+![The Group needs buffs card]({{ '/screenshots/frames/gbpoint.png' | relative_url }})
+
+![The Buffs page in the options]({{ '/screenshots/options-buffs.png' | relative_url }})
 
 ## Good to know
 

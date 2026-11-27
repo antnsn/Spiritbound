@@ -33,7 +33,7 @@ Type `/spirit` in chat, or click the Spiritbound button on your minimap.
 
 The options window has five pages on the left: **Buffs**, **Reagents**, **Travel**, **Extras** and **Skin**. Almost everything is on by default. Shadow Protection is the one buff that starts off.
 
-![The Buffs page in the options]({{ '/screenshots/skins/blizzard/options-buffs.png' | relative_url }})
+![The Buffs page in the options]({{ '/screenshots/options-buffs.png' | relative_url }})
 
 The screenshots on this site show the Blizzard skin. The default skin, Spirit, is violet. See [Skins](features/skins.html).
 
