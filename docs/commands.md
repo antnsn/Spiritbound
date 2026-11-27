@@ -16,6 +16,8 @@ Everything in Spiritbound can be set in the options window (`/spirit`). These ch
 | --- | --- |
 | `/spirit` | Opens or closes the options window. `/spirit options` and `/spirit config` do the same. |
 | `/spirit help` | Lists every command in chat. |
+| `/spirit ignore Debuff Name` | Adds a debuff to the [dispel](features/dispel.html) ignore list, or removes it if it's already there. Not case sensitive. |
+| `/spirit ignore` | Lists the ignored debuffs. |
 | `/spirit assign` | Lists who buffs the group with each Prayer. `/spirit assign 1` takes or releases the first one. See [Buff key](features/buff-key.html#sharing-the-buffs-with-other-priests). |
 
 ## Frames

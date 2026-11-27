@@ -14,6 +14,8 @@ ns.DATA = {
 	shadowProtection = { 976, 10957, 10958 },
 	prayerShadow = { 27683 },
 	levitate = 1706,
+	dispelMagic = { 527, 988 },
+	cureDisease = { 528, 552 }, -- Cure Disease, then Abolish Disease once known
 	-- each rank's spell level, as the lists above (Classic): a rank goes on someone at most 10 below
 	levels = {
 		fortitude = { 1, 12, 24, 36, 48, 60 }, prayerFortitude = { 48, 60 },

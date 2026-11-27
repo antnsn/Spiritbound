@@ -38,5 +38,6 @@ end
 
 ns.optionPages[#ns.optionPages + 1] = BuffPage
 ns.optionPages[#ns.optionPages + 1] = ReagentPage
+if ns.CleansePage then ns.optionPages[#ns.optionPages + 1] = ns.CleansePage end -- Dispel (Dispel.lua)
 ns.optionPages[#ns.optionPages + 1] = TravelPage
 Bound.InstallOptions(ns, { header = "Priest helper", launcher = "Priest helper: buffs, reagents, Levitate." })

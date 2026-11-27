@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Dispel**: a grid of your group (or a list) that shows who has Magic or a Disease you can remove. Click a cell for Dispel Magic, right-click for Cure Disease (Abolish Disease once you know it). Each has a key that casts on whoever is under your mouse, in combat too. Set it up on the new Dispel page; `/spirit ignore <debuff>` hides one you don't want to see. The same frame as Lightbound's Cleanse.
+
 ## 0.1.0 beta 9
 
 - **Who buffs the group has its own page, Group**: on the Extras page it pushed Carrot on a Stick off the bottom of the window. **Take** is grey until you know the Prayer, because a priest who can't cast it can't have it.

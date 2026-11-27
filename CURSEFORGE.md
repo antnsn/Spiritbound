@@ -21,6 +21,10 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 ## Reagents
 - Says when your **Holy or Sacred Candles** (for Prayer of Fortitude) or **Light Feathers** (for Levitate) run low.
 
+## Dispel
+- A **grid of your group** that lights up when someone has Magic or a Disease you can remove: click for Dispel Magic, right-click for Cure Disease (Abolish Disease once you know it). Works in combat.
+- A **key for each** that casts on whoever is under your mouse, in any raid frame too.
+
 ## Travel
 - **Press Escape**: beside the game menu you get Levitate and your Hearthstone.
 

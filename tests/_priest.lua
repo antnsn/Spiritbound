@@ -4,7 +4,7 @@ local NAMES = {
 	[1243] = "Power Word: Fortitude", [1244] = "Power Word: Fortitude", [1245] = "Power Word: Fortitude",
 	[2791] = "Power Word: Fortitude", [10937] = "Power Word: Fortitude", [10938] = "Power Word: Fortitude", [21562] = "Prayer of Fortitude",
 	[21564] = "Prayer of Fortitude", [588] = "Inner Fire", [14752] = "Divine Spirit", [27681] = "Prayer of Spirit",
-	[976] = "Shadow Protection", [27683] = "Prayer of Shadow Protection", [1706] = "Levitate", [429959] = "Well-Rested",
+	[976] = "Shadow Protection", [27683] = "Prayer of Shadow Protection", [1706] = "Levitate", [527] = "Dispel Magic", [988] = "Dispel Magic", [528] = "Cure Disease", [552] = "Abolish Disease", [429959] = "Well-Rested",
 }
 function M.priest(known)
 	local s = wb.state

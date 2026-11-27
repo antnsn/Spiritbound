@@ -16,5 +16,6 @@ Skin.lua
 Help.lua
 Buffs.lua
 Reagents.lua
+Dispel.lua
 Travel.lua
 Options.lua
