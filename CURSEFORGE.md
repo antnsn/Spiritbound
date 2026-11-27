@@ -10,7 +10,7 @@ Spiritbound keeps your priest buffs up and your reagents stocked: a card when Fo
 
 **Full guide with screenshots:** https://antnsn.github.io/Spiritbound/
 
-**Beta:** Spiritbound is new. Spell IDs come from Classic and are checked on Forever before 0.1.0; tell us what doesn't work.
+Spell IDs come from Classic. If something doesn't work on Forever, tell us on CurseForge or GitHub.
 
 ## Buffs
 - **Power Word: Fortitude, Inner Fire, Divine Spirit** (talent) and **Shadow Protection** (when you turn it on): a card when one is missing or about to run out. Click it to cast.
@@ -64,6 +64,11 @@ Spiritbound is one of the Bound addons, one per class, built on the same core: L
 
 ## Changelog
 <!-- changelog:start -->
+### 0.1.0
+
+- The first full release: everything in the betas below, and Dispel.
+- **Dispel**: a grid of your group (or a list) that shows who has Magic or a Disease you can remove. Click a cell for Dispel Magic, right-click for Cure Disease (Abolish Disease once you know it). Each has a key that casts on whoever is under your mouse, in combat too. Set it up on the new Dispel page; `/spirit ignore <debuff>` hides one you don't want to see. The same frame as Lightbound's Cleanse.
+
 ### 0.1.0 beta 9
 
 - **Who buffs the group has its own page, Group**: on the Extras page it pushed Carrot on a Stick off the bottom of the window. **Take** is grey until you know the Prayer, because a priest who can't cast it can't have it.

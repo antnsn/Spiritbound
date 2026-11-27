@@ -17,7 +17,7 @@ The priest helper for World of Warcraft: Forever.
 ---
 
 {: .note }
-Spiritbound is in beta. Spell IDs come from Classic and are being checked on Forever. Tell us what doesn't work.
+Spell IDs come from Classic. If something doesn't work on Forever, tell us.
 
 ## Why Spiritbound exists
 
