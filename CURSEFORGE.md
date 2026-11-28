@@ -34,6 +34,7 @@ Spell IDs come from Classic. If something doesn't work on Forever, tell us on Cu
 - **Buff key** (Extras page): out of combat, each press casts the next thing a card asks for, then Fortitude, Divine Spirit and Shadow Protection (when on) on the next group member in range who is missing them. When 3 or more in a party or raid group need a buff and you have the candle, it casts the Prayer version on the whole group.
 - **Who buffs the group** (Group page): take or release each Prayer, shared with the other priests in your group, whether they run Spiritbound, Buffy or Priestly. A buff someone else has is left to them.
 - **Well Rested and Well Fed**: a countdown before they run out, with a sound if you like.
+- **Camp Benefits**: a countdown before the campfire buff runs out, and which ticked camp features it lacks.
 - **Carrot on a Stick** (Extras page, off by default): worn while you ride, in the trinket slot you pick; your own trinket goes back on when you get off. Not in instances, and never in combat.
 - **Explained**: hover over a card or button for a plain-word explanation of what it does and why (can be turned off).
 - **Your layout**: every frame can be moved, snapped to a grid and scaled (`/spirit unlock`).
