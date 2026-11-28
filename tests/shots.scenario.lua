@@ -47,7 +47,7 @@ wb.check(run ~= nil, "the run is saved under the skin")
 local names = {}
 for _, s in ipairs(run and run.list or {}) do names[#names + 1] = s.name end
 wb.expect("what was shot", table.concat(names, ","),
-	"options-buffs,options-reagents,options-dispel,options-travel,options-extras,options-group,options-skin,frames-unlocked,travel")
+	"options-buffs,options-reagents,options-dispel,options-travel,options-extras,options-camp,options-group,options-skin,frames-unlocked,travel")
 local opt = run.list[1]
 wb.check(opt.rects.main and opt.rects.main.w > 0 and opt.rects.main.h > 0, "the options window's place")
 wb.check(opt.at:match("^%d%d%d%d%d%d_%d%d%d%d%d%d$") ~= nil, "a time stamp like the screenshot file names")

@@ -48,7 +48,7 @@ elseif m == "page" then
 		titles[#titles + 1] = p.title
 		if p.title == "Dispel" then page = p.frame end
 	end
-	wb.expect("pages", table.concat(titles, ", "), "Buffs, Reagents, Dispel, Travel, Extras, Group, Skin")
+	wb.expect("pages", table.concat(titles, ", "), "Buffs, Reagents, Dispel, Travel, Extras, Camp, Group, Skin")
 	wb.check(page and -page.cleanseBottom <= page:GetHeight(), "the Dispel page fits: " .. tostring(page and page.cleanseBottom))
 	wb.slash("/spirit ignore Frost Nova")
 	wb.check(wb.saved("SpiritboundDB").clIgnore["frost nova"], "/spirit ignore keeps a debuff name")
